@@ -1,0 +1,276 @@
+.container {  
+    max-width: 1050px;  
+    width: 90%;  
+    margin: auto;  
+   }  
+   .navbar {  
+    width: 100%;
+    height: 40%;  
+    box-shadow: 0 1px 4px rgb(146 161 176 / 15%);  
+   }  
+   .nav-container {  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    height: 62px;  
+   }  
+   .navbar .menu-items {  
+    display: flex; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #002642; 
+    background-color:white;
+   }  
+   .menu-items a{
+       background-image: linear-gradient(red, red);
+       background-repeat: no-repeat;
+       background-size: 0% 100%;
+       background-position-x: right;
+       transition: background-size 500ms;
+
+   }
+   .menu-items a:hover{
+       background-size: 100% 100%;
+       background-position-x: left;
+
+   }
+   .navbar .nav-container li {  
+    list-style: none;  
+   }
+   .navbar .nav-container a {  
+    text-decoration: none;  
+    color: #0e2431;  
+    font-weight: 500;  
+    font-size: 1.2rem;  
+    padding: 0.7rem;  
+   }  
+   .navbar .nav-container a:hover{  
+     font-weight: bolder;  
+   }  
+   .nav-container {
+       display: block;
+       position: relative;
+       height: 60px;
+
+   }
+  .nav-container .checkbox {  
+    position: absolute;  
+    display: block;  
+    height: 32px;  
+    width: 32px;  
+    top: 20px;  
+    left: 20px;  
+    z-index: 5;  
+    opacity: 0;  
+    cursor: pointer;
+  }
+  .nav-container .hamburger-lines {  
+    display: block;  
+    height: 26px;  
+    width: 32px;  
+    position: absolute;  
+    top: 17px;  
+    left: 20px;  
+    z-index: 2;  
+    display: flex;  
+    flex-direction: column;  
+    justify-content: space-between;  
+   }  
+   .nav-container .hamburger-lines .line {  
+    display: block;  
+    height: 4px;  
+    width: 100%;  
+    border-radius: 10px;  
+    background: #0e2431;  
+   }  
+   .nav-container .hamburger-lines .line1 {  
+    transform-origin: 0% 0%;  
+    transition: transform 0.4s ease-in-out;  
+   }
+   .nav-container .hamburger-lines .line2 {  
+    transition: transform 0.2s ease-in-out;  
+   }  
+   .nav-container .hamburger-lines .line3 {  
+    transform-origin: 0% 100%;  
+    transition: transform 0.4s ease-in-out;  
+   }  
+   .navbar .menu-items {  
+    padding-top: 120px;  
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);  
+    height: 100vh;  
+    width: 100%;  
+    transform: translate(-150%);  
+    display: flex;  
+    flex-direction: column;  
+    margin-left: -40px;  
+    padding-left: 50px;  
+    transition: transform 0.5s ease-in-out;  
+    text-align: center;  
+   }  
+   .navbar .menu-items li {  
+    margin-bottom: 1.2rem;  
+    font-size: 1.5rem;  
+    font-weight: 500;  
+   }
+  
+   .logo {  
+    position: absolute;  
+    top: 5px;  
+    right: 15px;  
+    font-size: 1.2rem;  
+    color: #0e2431;  
+   }  
+   .nav-container input[type="checkbox"]:checked ~ .menu-items {  
+    transform: translateX(0);  
+   }  
+   .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {  
+    transform: rotate(45deg);  
+   }  
+   .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {  
+    transform: scaleY(0);  
+   }  
+   .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {  
+    transform: rotate(-45deg);  
+   }  
+   .nav-container input[type="checkbox"]:checked ~ .logo{  
+    display: none;  
+   }
+  
+body{
+    background-image: url('https://media.istockphoto.com/vectors/blood-donation-concept-vector-id1256555401?k=20&m=1256555401&s=612x612&w=0&h=We4Ckw72r8-RSK_TOVG2jWtui1ntlQNgYeDo1lLi1qg=');
+    background-repeat: repeat-y;
+background-size:cover;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    box-shadow: 0 0 10px lightblue;
+    width: 320px;
+    padding: 12px;
+    margin: 8px;
+    border-radius: 16px;
+}
+.card-img{
+    width: 100%;
+    border-radius: 16px;
+
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    color:red;
+    font-size: larger;
+    font-weight: bold;
+}
+h3{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:black;
+    font-weight: bold;
+}
+summary{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: red   ;
+    font-weight: bolder;
+}
+details{
+    background-color: white;
+
+}
+::marker{
+    content: '🩸';
+}
+li{
+    color: orange;
+}
+
+label{
+    color: brown;
+  font-size: 35px;
+  font-weight: bold;
+
+}
+fieldset{
+    background-color: azure;
+    border: 5px solid red;
+    border-radius: 15px;
+
+}
+legend{
+    padding: 20px;
+    background-color:red;
+    border-radius: 12px;
+    font-size: 20px;
+    color: #0e2431;
+}
+input{
+    height: 15px;
+    width: 100px;
+
+}
+
+
+  
+.one h1 {
+    font-size:26px; font-weight:700;  letter-spacing:1px; text-transform:uppercase; width:160px; text-align:center; margin:auto; white-space:nowrap; padding-bottom:13px;
+  }
+  .one h1:before {
+      background-color: #c50000;
+      content: '';
+      display: block;
+      height: 3px;
+      width: 75px;
+      margin-bottom: 5px;
+  }
+  .one h1:after {
+      background-color: #c50000;
+      content: '';
+      display: block;
+    position:absolute; right:0; bottom:0;
+      height: 3px;
+      width: 75px;
+      margin-bottom: 0.25em;
+  }
+  
+
+  h1 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: #080808;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+  }
+  
+  input[type='sumbit']{
+    height: 50px;
+    width: 50px;
+    background-color: #c50000;
+    color: #c50000;
+  }
+  
+ .i1{
+    height: 300px;
+    width: 300px;
+    border-radius: 10%;
+
+    border: 8px groove cyan;
+}
+.container_one{
+   display: grid;
+   grid-template-columns: 400px 400px 400px 400px;
+   grid-template-rows: auto auto auto auto;
+   grid-gap: 20px;
+}
+
+footer{
+    text-align: center;
+    padding: 3px;
+    font-size: large;
+    color: #c50000;
+}
